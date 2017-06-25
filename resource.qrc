@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="/about/label">
+    <file>about-label.png</file>
+  </qresource>
+  <qresource prefix="/logo/huge">
+    <file>logo-huge.jpg</file>
+  </qresource>
+</RCC>

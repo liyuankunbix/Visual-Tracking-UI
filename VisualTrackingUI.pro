@@ -38,11 +38,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    imageconvert.cpp
+    imageconvert.cpp \
+    aboutdialog.cpp \
+    paintwidget.cpp
 
 HEADERS += \
         mainwindow.h \
-    imageconvert.h
+    imageconvert.h \
+    aboutdialog.h \
+    paintwidget.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    aboutdialog.ui
+
+RESOURCES += \
+    resource.qrc
