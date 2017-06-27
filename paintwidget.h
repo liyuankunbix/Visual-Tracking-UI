@@ -12,6 +12,10 @@ public:
     explicit PaintWidget(QWidget *parent = 0);
     QRectF rectRatio;
 
+public slots:
+//    void beginIntialize();
+    void beginDraw();
+
 signals:
     void finishedDraw(bool flag);
 
@@ -23,7 +27,8 @@ protected:
 
 private:
     int x1, y1, x2, y2;
-    bool havePressed, haveReleased;
+    bool gotBeginSignal;
+//    bool isInitializing;
     bool isDrawing;
 };
 

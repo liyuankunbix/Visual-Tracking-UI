@@ -31,9 +31,15 @@
   <property name="windowTitle">
    <string>关于目标跟踪调研系统</string>
   </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
   <layout class="QGridLayout" name="gridLayout_2">
    <item row="0" column="0">
     <widget class="QWidget" name="widget" native="true">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
      <widget class="QPushButton" name="pushButton">
       <property name="geometry">
        <rect>

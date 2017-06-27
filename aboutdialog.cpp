@@ -6,6 +6,10 @@ AboutDialog::AboutDialog(QWidget *parent) :
     ui(new Ui::AboutDialog)
 {
     ui->setupUi(this);
+    QPalette palette;
+    palette.setColor(QPalette::Background, QColor(215,232,242));
+    this->setPalette(palette);
+    ui->widget->setPalette(palette);
     this->setAttribute(Qt::WA_DeleteOnClose, true);
     QImage image(":/about/label/about-label.png");
     QGraphicsScene *scene = new QGraphicsScene;

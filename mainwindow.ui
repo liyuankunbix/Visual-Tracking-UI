@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1337</width>
-    <height>787</height>
+    <width>1334</width>
+    <height>918</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,15 @@
    <iconset resource="resource.qrc">
     <normaloff>:/logo/huge/logo-huge.jpg</normaloff>:/logo/huge/logo-huge.jpg</iconset>
   </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
   <widget class="QWidget" name="centralWidget">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="1" column="0">
+    <item row="1" column="1">
      <widget class="QWidget" name="widget" native="true">
       <layout class="QGridLayout" name="gridLayout_2">
        <item row="0" column="0">
@@ -50,15 +56,28 @@
                  <widget class="QWidget" name="widget_10" native="true">
                   <layout class="QGridLayout" name="gridLayout_11">
                    <item row="0" column="0">
-                    <widget class="QLabel" name="label">
-                     <property name="maximumSize">
+                    <widget class="QTextEdit" name="textEdit">
+                     <property name="minimumSize">
                       <size>
-                       <width>54</width>
-                       <height>12</height>
+                       <width>132</width>
+                       <height>0</height>
                       </size>
                      </property>
-                     <property name="text">
-                      <string>图源获取</string>
+                     <property name="maximumSize">
+                      <size>
+                       <width>132</width>
+                       <height>34</height>
+                      </size>
+                     </property>
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                     <property name="html">
+                      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;图源获取&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                      </property>
                     </widget>
                    </item>
@@ -135,15 +154,28 @@
                  <widget class="QWidget" name="widget_14" native="true">
                   <layout class="QGridLayout" name="gridLayout_15">
                    <item row="0" column="0">
-                    <widget class="QLabel" name="label_2">
-                     <property name="maximumSize">
+                    <widget class="QTextEdit" name="textEdit_2">
+                     <property name="minimumSize">
                       <size>
-                       <width>54</width>
-                       <height>12</height>
+                       <width>132</width>
+                       <height>0</height>
                       </size>
                      </property>
-                     <property name="text">
-                      <string>初始化</string>
+                     <property name="maximumSize">
+                      <size>
+                       <width>132</width>
+                       <height>34</height>
+                      </size>
+                     </property>
+                     <property name="readOnly">
+                      <bool>true</bool>
+                     </property>
+                     <property name="html">
+                      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'SimSun'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;初始化&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                      </property>
                     </widget>
                    </item>
@@ -191,18 +223,10 @@
               </layout>
              </widget>
              <widget class="QWidget" name="widget_6" native="true">
-              <layout class="QGridLayout" name="gridLayout_7">
-               <item row="0" column="0">
-                <widget class="QGraphicsView" name="graphicsView"/>
-               </item>
-              </layout>
+              <layout class="QGridLayout" name="gridLayout_7"/>
              </widget>
              <widget class="QWidget" name="widget_7" native="true">
-              <layout class="QGridLayout" name="gridLayout_8">
-               <item row="0" column="0">
-                <widget class="QGraphicsView" name="graphicsView_2"/>
-               </item>
-              </layout>
+              <layout class="QGridLayout" name="gridLayout_8"/>
              </widget>
             </widget>
            </item>
@@ -243,8 +267,8 @@
                     <widget class="QPushButton" name="pushButton_6">
                      <property name="maximumSize">
                       <size>
-                       <width>23</width>
-                       <height>23</height>
+                       <width>33</width>
+                       <height>33</height>
                       </size>
                      </property>
                      <property name="text">
@@ -266,8 +290,8 @@
                     <widget class="QPushButton" name="pushButton_7">
                      <property name="maximumSize">
                       <size>
-                       <width>23</width>
-                       <height>23</height>
+                       <width>33</width>
+                       <height>33</height>
                       </size>
                      </property>
                      <property name="text">
@@ -301,6 +325,95 @@
       </layout>
      </widget>
     </item>
+    <item row="1" column="0">
+     <widget class="QWidget" name="widget_20" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>35</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>35</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>20</y>
+         <width>35</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/button/logo/menu_item_icon_1.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="resource.qrc">
+         <normaloff>:/button/logo/menu_item_icon_1.png</normaloff>:/button/logo/menu_item_icon_1.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>60</y>
+         <width>35</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/button/logo/menu_item_icon_2.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>100</y>
+         <width>35</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>35</width>
+         <height>35</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/button/logo/menu_item_icon_9.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -308,7 +421,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1337</width>
+     <width>1334</width>
      <height>23</height>
     </rect>
    </property>
@@ -338,7 +451,6 @@
    <addaction name="menu_2"/>
    <addaction name="menu_3"/>
   </widget>
-  <widget class="QStatusBar" name="statusBar"/>
   <action name="actionOpen_Image">
    <property name="text">
     <string>Open Image</string>

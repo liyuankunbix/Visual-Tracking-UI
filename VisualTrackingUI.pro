@@ -11,7 +11,12 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = VisualTrackingUI
 TEMPLATE = app
 
+#include(G:/opt/qt/QtitanRibbon Demo/src/shared/qtitanribbon.pri)
+#include($$quote(G:/opt/qt/QtitanRibbon Demo/src/shared/qtitannavigation.pri))
+
 INCLUDEPATH += G:/opt/opencv-2.4.13/build/include
+INCLUDEPATH += $$quote(G:/opt/qt/QtitanRibbon Demo/include)
+INCLUDEPATH += $$quote(G:/opt/qt/QtitanNavigation Demo/include)
 
 LIBS += G:/opt/opencv-2.4.13/build/x64/mingw/lib/libopencv_core2413.dll.a
 LIBS += G:/opt/opencv-2.4.13/build/x64/mingw/lib/libopencv_highgui2413.dll.a
@@ -21,6 +26,8 @@ LIBS += G:/opt/opencv-2.4.13/build/x86/mingw/lib/libopencv_core2413.dll.a
 LIBS += G:/opt/opencv-2.4.13/build/x86/mingw/lib/libopencv_highgui2413.dll.a
 LIBS += G:/opt/opencv-2.4.13/build/x86/mingw/lib/libopencv_imgproc2413.dll.a
 LIBS += G:/opt/opencv-2.4.13/build/x86/mingw/lib/libopencv_photo2413.dll.a
+LIBS += $$quote(G:/opt/qt/QtitanRibbon Demo/bin/libqtnribbon4.a)
+LIBS += $$quote(G:/opt/qt/QtitanNavigation Demo/bin/libqtnnavigation1.a)
 
 
 # The following define makes your compiler emit warnings if you use
@@ -40,17 +47,22 @@ SOURCES += \
         mainwindow.cpp \
     imageconvert.cpp \
     aboutdialog.cpp \
-    paintwidget.cpp
+    paintwidget.cpp \
+    tabwidget_1.cpp
+#    window.cpp
 
 HEADERS += \
         mainwindow.h \
     imageconvert.h \
     aboutdialog.h \
-    paintwidget.h
+    paintwidget.h \
+    tabwidget_1.h
+#    window.h
 
 FORMS += \
         mainwindow.ui \
-    aboutdialog.ui
+    aboutdialog.ui \
+    tabwidget_1.ui
 
 RESOURCES += \
     resource.qrc
